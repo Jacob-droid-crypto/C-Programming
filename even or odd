@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a = 52;
+
+    if (a % 2 == 0) { // Corrected comparison operator
+        printf("The given number %d is even", a); // Corrected printf
+    } else {
+        printf("The given number %d is odd", a);
+    }
+
+    return 0;
+}
