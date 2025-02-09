@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int roll_no;
+    float sub1, sub2, sub3, percentage, total, max_marks;
+
+    printf("Enter your roll number: ");
+    scanf("%d", &roll_no);
+
+    printf("Enter your marks for three subjects: ");
+    scanf("%f %f %f", &sub1, &sub2, &sub3);
+
+    printf("Enter the maximum marks for each subject: ");
+    scanf("%f", &max_marks);
+
+    total = sub1 + sub2 + sub3;
+    percentage = (total / (max_marks * 3)) * 100; // assuming each subject has the same max marks
+
+    printf("Your percentage: %.2f\n", percentage);
+
+    if (percentage >= 75)
+    {
+        printf("First class with distinction\n");
+    }
+    else if (percentage >= 60 && percentage < 75)
+    {
+        printf("First class\n");
+    }
+    else if (percentage < 60)
+    {
+        printf("Second class\n");
+    }
+
+    return 0;
+}
