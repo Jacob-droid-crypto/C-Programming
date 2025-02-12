@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float amount,profit,loss,cost;
+    printf("Enter the amount : ");
+    scanf("%f",&amount);
+    printf("Enter the cost:");
+    scanf("%f",&cost);
+    if(cost<amount)
+    {
+        profit=amount-cost;
+        printf("The profit is %.2f",profit);
+    }
+    else if(cost>amount)
+    {
+        loss= cost-amount;
+        printf("The loss amount is %f",loss);
+    }
+    else
+    {
+        printf("Their is neither profit nor loss");
+    }
+    return 0;
+}    
+    
