@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int angle,a1,a2,a3;
+    printf("Enter first angle:");
+    scanf("%d",&a1);
+    printf("Enter second angle:");
+    scanf("%d",&a2);
+    printf("Enter third angle:");
+    scanf("%d",&a3);
+    angle=a1+a2+a3;
+    if(angle<=180)
+    {
+        printf("The total angle is %d",angle);
+    }
+    else
+    {
+        printf("Invalid triangle");
+    }
+    return 0;
+}    
+   
